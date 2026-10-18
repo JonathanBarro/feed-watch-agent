@@ -1,0 +1,28 @@
+# Edit this file to choose what to watch. Never put passwords or email addresses here:
+# they go in environment variables / GitHub Secrets (see README).
+
+title: "Feed watch"          # appears in the email subject and heading
+max_items_per_email: 30
+
+# Any website that publishes an RSS or Atom feed works. Replace these examples with your own.
+# Where to find a feed URL: try adding /feed, /rss or /atom.xml to the site address,
+# or look for the RSS icon or a <link rel="alternate" type="application/rss+xml"> in the page source.
+feeds:
+  - name: "Example: tech news"           # shown in the email as the source label
+    url: "https://hnrss.org/frontpage"
+  - name: "Example: a GitHub project's releases"
+    url: "https://github.com/python/cpython/releases.atom"
+  # More ready-made feed patterns:
+  #   Reddit community:  https://www.reddit.com/r/<name>/.rss
+  #   YouTube channel:   https://www.youtube.com/feeds/videos.xml?channel_id=<id>
+  #   WordPress blog:    https://<site>/feed/
+
+# Optional: only report items whose title or summary contains one of these words.
+# Leave the list empty to report everything that is new.
+keywords: []
+#  - "security"
+#  - "release"
+
+smtp:
+  host: "smtp.gmail.com"
+  port: 587
